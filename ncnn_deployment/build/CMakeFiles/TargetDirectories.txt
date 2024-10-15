@@ -1,0 +1,7 @@
+/home/leiwang/workspace/pytorch_learn/kaggle/ncnn_bushu/build/CMakeFiles/MyExecutable.dir
+/home/leiwang/workspace/pytorch_learn/kaggle/ncnn_bushu/build/CMakeFiles/edit_cache.dir
+/home/leiwang/workspace/pytorch_learn/kaggle/ncnn_bushu/build/CMakeFiles/rebuild_cache.dir
+/home/leiwang/workspace/pytorch_learn/kaggle/ncnn_bushu/build/CMakeFiles/list_install_components.dir
+/home/leiwang/workspace/pytorch_learn/kaggle/ncnn_bushu/build/CMakeFiles/install.dir
+/home/leiwang/workspace/pytorch_learn/kaggle/ncnn_bushu/build/CMakeFiles/install/local.dir
+/home/leiwang/workspace/pytorch_learn/kaggle/ncnn_bushu/build/CMakeFiles/install/strip.dir

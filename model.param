@@ -1,0 +1,14 @@
+7767517
+12 12
+Input            input                    0 1 input
+InnerProduct     /Sequentials/lin1/Gemm   1 1 input /Sequentials/lin1/Gemm_output_0 0=80 1=1 2=4240
+ReLU             /Sequentials/relu/Relu   1 1 /Sequentials/lin1/Gemm_output_0 /Sequentials/relu/Relu_output_0
+InnerProduct     /Sequentials/lin2/Gemm   1 1 /Sequentials/relu/Relu_output_0 /Sequentials/lin2/Gemm_output_0 0=160 1=1 2=12800
+InnerProduct     /Sequentials/lin3/Gemm   1 1 /Sequentials/lin2/Gemm_output_0 /Sequentials/lin3/Gemm_output_0 0=80 1=1 2=12800
+InnerProduct     /Sequentials/lin4/Gemm   1 1 /Sequentials/lin3/Gemm_output_0 /Sequentials/lin4/Gemm_output_0 0=40 1=1 2=3200
+ReLU             /Sequentials/relu_1/Relu 1 1 /Sequentials/lin4/Gemm_output_0 /Sequentials/relu_1/Relu_output_0
+InnerProduct     /Sequentials/lin5/Gemm   1 1 /Sequentials/relu_1/Relu_output_0 /Sequentials/lin5/Gemm_output_0 0=20 1=1 2=800
+ReLU             /Sequentials/relu_2/Relu 1 1 /Sequentials/lin5/Gemm_output_0 /Sequentials/relu_2/Relu_output_0
+InnerProduct     /Sequentials/lin6/Gemm   1 1 /Sequentials/relu_2/Relu_output_0 /Sequentials/lin6/Gemm_output_0 0=1 1=1 2=20
+Sigmoid          /Sequentials/sigmoid/Sigmoid 1 1 /Sequentials/lin6/Gemm_output_0 /Sequentials/sigmoid/Sigmoid_output_0
+Squeeze          /Squeeze                 1 1 /Sequentials/sigmoid/Sigmoid_output_0 output -23303=1,0
